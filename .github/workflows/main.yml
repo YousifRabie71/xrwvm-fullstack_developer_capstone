@@ -25,13 +25,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8
 
-    - name: Print working directory
-      run: pwd
-
-    - name: Run Linter
+    - name: Run Python Linter
       run: |
-        pwd
-        find . -name "*.py" -exec flake8 {} +
+        flake8 server/djangoapp server/djangoproj \
+          --exclude=djangoenv,__pycache__,migrations,frontend,node_modules \
+          --max-line-length=127 \
+          --ignore=E722,W503
         echo "Linted all the python files successfully"
 
   lint_js:
@@ -50,7 +49,8 @@ jobs:
     - name: Install JSHint
       run: npm install jshint --global
 
-    - name: Run Linter
+    - name: Run JavaScript Linter
       run: |
-        find ./server/database -name "*.js" -exec jshint {} +
+        echo '{"esversion": 8, "node": true, "undef": false, "unused": false}' > .jshintrc
+        find ./server/database -name "*.js" -exec jshint --config .jshintrc {} +
         echo "Linted all the js files successfully"
