@@ -1,81 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About Us - Best Cars Dealership</title>
     <meta charset="UTF-8">
-
+    <title>About Us - Best Cars Dealership</title>
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #54d3d3;">
-        <a class="navbar-brand" href="/" style="font-size: 32px; font-weight: bold; margin-left: 15px;">
-            Dealerships
-        </a>
 
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #55c3c3;">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="/">Dealerships</a>
         <div class="navbar-nav">
             <a class="nav-link" href="/">Home</a>
             <a class="nav-link active" href="/about/">About Us</a>
             <a class="nav-link" href="/contact/">Contact Us</a>
         </div>
+    </div>
+</nav>
 
-        <div class="navbar-nav ml-auto" style="margin-right: 30px;">
-            <a class="nav-link" href="/login/">Login</a>
-            <a class="nav-link" href="/register/">Register</a>
-        </div>
-    </nav>
-
-    <div class="container mt-5">
-        <div id="about-header" class="text-center">
+<div class="container mt-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
             <h1>About Us</h1>
             <p>
-                Welcome to Best Cars dealership, home to the best cars in North America.
-                We deal in selling domestic and imported cars at reasonable prices.
+                Welcome to Best Cars Dealership, your trusted online platform for finding
+                reliable car dealerships across the United States.
             </p>
             <p>
-                Our mission is to provide customers with trusted vehicles, excellent service,
-                and a smooth car buying experience from start to finish.
+                Our mission is to help customers compare dealerships, read real customer
+                reviews, and make informed decisions before purchasing their next car.
+            </p>
+            <p>
+                We work hard to provide accurate dealership information, helpful reviews,
+                and a simple user experience for every customer.
             </p>
         </div>
 
-        <div class="row mt-5">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="/static/person.png" class="card-img-top" alt="Sales Manager">
-                    <div class="card-body">
-                        <h5 class="card-title">Michael Smith</h5>
-                        <p class="card-text">
-                            General Manager with more than 10 years of experience in the automotive industry.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="/static/person.png" class="card-img-top" alt="Customer Advisor">
-                    <div class="card-body">
-                        <h5 class="card-title">Sarah Johnson</h5>
-                        <p class="card-text">
-                            Customer advisor who helps buyers choose the right car based on their needs and budget.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="/static/person.png" class="card-img-top" alt="Service Specialist">
-                    <div class="card-body">
-                        <h5 class="card-title">David Brown</h5>
-                        <p class="card-text">
-                            Vehicle service specialist focused on quality checks, safety, and customer satisfaction.
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-6">
+            <img
+                src="https://images.unsplash.com/photo-1562141961-15e5c8d0e6f5?auto=format&fit=crop&w=900&q=80"
+                alt="Modern car dealership showroom"
+                class="img-fluid rounded shadow">
         </div>
     </div>
+
+    <hr class="my-5">
+
+    <h2 class="text-center mb-4">Meet Our Team</h2>
+
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <img
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80"
+                alt="Michael Johnson"
+                class="rounded-circle mb-3"
+                width="160"
+                height="160">
+            <h4>Michael Johnson</h4>
+            <h6>General Manager</h6>
+            <p>
+                Michael leads dealership operations and ensures every customer receives
+                professional and reliable service.
+            </p>
+            <p>Email: michael.johnson@bestcars.com</p>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80"
+                alt="Sarah Williams"
+                class="rounded-circle mb-3"
+                width="160"
+                height="160">
+            <h4>Sarah Williams</h4>
+            <h6>Customer Experience Lead</h6>
+            <p>
+                Sarah supports customers by improving the review process and making the
+                platform easy to use.
+            </p>
+            <p>Email: sarah.williams@bestcars.com</p>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <img
+                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80"
+                alt="David Brown"
+                class="rounded-circle mb-3"
+                width="160"
+                height="160">
+            <h4>David Brown</h4>
+            <h6>Sales Director</h6>
+            <p>
+                David works with dealership partners to maintain accurate inventory and
+                dealership information.
+            </p>
+            <p>Email: david.brown@bestcars.com</p>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
